@@ -9,16 +9,21 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TicketRepository extends JpaRepository<ParkingTicket, Long> {
 
-    @Procedure(procedureName = "proc_registry_entry")
+    @Procedure(procedureName = "PROC_REGISTRY_ENTRY")
     String registerEntry(
-            @Param("p_vehicle_plate") String plate,
-            @Param("p_type_id") Integer typeId,
-            @Param("p_model") String model,
-            @Param("p_color") String color
+            @Param("p_vehicle_plate") String p_vehicle_plate,
+            @Param("p_type_id") Integer p_type_id,
+            @Param("p_model") String p_model,
+            @Param("p_color") String p_color
     );
 
-    @Procedure(procedureName = "proc_registry_exit")
+    @Procedure(procedureName = "PROC_REGISTRY_EXIT")
     String registerExit(
-            @Param("p_vehicle_plate") String plate
+            @Param("p_vehicle_plate") String p_vehicle_plate
+    );
+
+    @Procedure(procedureName = "PROC_CANCEL_TICKET")
+    String cancelTicket(
+            @Param("p_vehicle_place") String p_vehicle_plate
     );
 }

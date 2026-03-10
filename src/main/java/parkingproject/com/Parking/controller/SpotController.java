@@ -2,28 +2,22 @@ package parkingproject.com.Parking.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.simple.SimpleJdbcCall;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import parkingproject.com.Parking.service.SpotService;
 
 import java.util.Map;
 
 @RestController
 @RequestMapping("/api/spots")
+@CrossOrigin(origins = "http://localhost:5173")
 public class SpotController {
 
     @Autowired
-    private JdbcTemplate jdbcTemplate;
+    private SpotService spotService;
 
     @GetMapping("/stats")
     public ResponseEntity<Map<String, Object>> getOccupancy() {
-        SimpleJdbcCall jdbcCall = new SimpleJdbcCall(jdbcTemplate)
-                .withProcedureName("proc_get_occupancy_stats");
-
-        Map<String, Object> out = jdbcCall.execute();
-
-        return ResponseEntity.ok(out);
+        Map<String, Object> stats = spotService.getOccupancyStats();
+        return ResponseEntity.ok(stats);
     }
 }

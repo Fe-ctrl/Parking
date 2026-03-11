@@ -1,4 +1,4 @@
-![UML for the project](./image/parkingProject.drawio.png)
+![UML for the project](./image/parkingProjectUML.png)
 
 <a name="en"></a>
 

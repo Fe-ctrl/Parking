@@ -29,7 +29,7 @@ This repository contains a complete full-stack project demonstrating the integra
 <a name="pt"></a>
 
 > [!NOTE]
-🇧🇷 **Para a versão em Português**, [clique aqui](#pt)
+🇺🇸 **For the English version**, [click here](#en)
 
 # Aplicação Full-Stack: Java, TypeScript & Oracle PL/SQL
 

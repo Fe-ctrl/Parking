@@ -1,8 +1,7 @@
-<p align="right">
-  <a href="#english">🇺🇸 English</a> | <a href="#portugues">🇧🇷 Português</a>
-</p>
+<a name="en"></a>
 
-<a id="english"></a>
+> [!NOTE]
+🇧🇷 **Para a versão em Português**, [clique aqui](#pt)
 
 # Full-Stack Application: Java, TypeScript & Oracle PL/SQL
 
@@ -27,8 +26,10 @@ This repository contains a complete full-stack project demonstrating the integra
 3. **Frontend:** Open the frontend directory and run the application (e.g., using a local server) to interact with the UI.
 
 ---
+<a name="pt"></a>
 
-<a id="portugues"></a>
+> [!NOTE]
+🇧🇷 **Para a versão em Português**, [clique aqui](#pt)
 
 # Aplicação Full-Stack: Java, TypeScript & Oracle PL/SQL
 

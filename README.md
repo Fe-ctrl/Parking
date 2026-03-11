@@ -53,5 +53,3 @@ Este repositório contém um projeto full-stack completo demonstrando a integra�
 1. **Banco de Dados:** Abra seu ambiente Oracle SQL, rode os scripts de criação de tabelas e compile os Pacotes (`Specification` e `Body`).
 2. **Backend:** Inicie a aplicação Java para subir o servidor da API. Certifique-se de que a string de conexão com o banco está configurada corretamente.
 3. **Frontend:** Abra o diretório do frontend e inicie a aplicação (ex: usando um servidor local) para interagir com a interface.
-
-<p align="right"><a href="#english">⬆️ Voltar ao topo / Back to top</a></p>

@@ -1,3 +1,5 @@
+![UML for the project](./image/parkingProject.drawio.png)
+
 <a name="en"></a>
 
 > [!NOTE]
